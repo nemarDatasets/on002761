@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "memoryreplay",
+  "description": "This MEG dataset contains neural recordings from human subjects during memory and localizer phases of an experiment investigating memory replay and sequential neural activity patterns. Participants viewed images from multiple categories and story-ending stimuli while MEG signals were recorded with precise event timing marked by triggers. The dataset includes detailed trigger information for event-related analysis and supports investigations of how the brain replays learned sequences during memory tasks.",
+  "methods_description": "MEG recordings were acquired during two experimental phases: a memory phase and a localizer phase. In both phases, trials began with visual presentation of images from 6 stimulus categories or story-ending stimuli (positive or negative valence), with category information encoded in trigger values (1-8). Memory phase trials included answer onsets marked approximately 5.5 seconds after stimulus onset. Localizer phase trials included a 2-second baseline period with word naming preceding picture onset. Visual stimulus timing was calibrated using a photodiode, with approximately 20 ms delay between trigger and visual onset.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +15,27 @@
     "Timothy E.J. Behrens": {},
     "Raymond J. Dolan": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds002761.v1.1.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "memory replay"
+    },
+    {
+      "term": "sequential activity"
+    },
+    {
+      "term": "hippocampus"
+    },
+    {
+      "term": "event-related analysis"
+    },
+    {
+      "term": "neural oscillations"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1101/758185",
       "identifier_type": "DOI",
@@ -33,6 +50,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002761",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds002761.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -52,21 +74,23 @@
     },
     {
       "funder_name": "Wellcome Trust",
-      "award_number": "203147/Z/16/Z"
+      "award_number": "203147/Z/16/Z",
+      "award_title": "Core funding for Wellcome Centre for Human Neuroimaging"
     },
     {
-      "funder_name": "University College London"
+      "funder_name": "UCL",
+      "award_title": "Graduate Research Scholarship and Overseas Research Scholarship"
     },
     {
       "funder_name": "Max Planck Society"
     }
   ],
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
     "meg"
   ],
-  "resource_type_specific": "MEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "219.1 GB (1805 files)"
   ],
   "formats": [
     ".acq",
@@ -81,26 +105,8 @@
     ".meg4",
     ".newds",
     ".res4",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This MEG dataset contains neural recordings from a memory replay study investigating how the brain replays sequential memories during rest and task periods. Participants performed a memory encoding phase followed by a localizer phase while MEG activity was recorded. The dataset includes detailed trigger information for event marking, stimulus category labels, and story-ending classifications, enabling analysis of memory sequence representations in neural activity.",
-  "methods_description": "MEG recordings were acquired during two experimental phases: a memory phase where participants viewed images from 6 stimulus categories plus story-ending stimuli, and a localizer phase with similar stimulus presentations. Event onsets were marked by trigger pulses in the MEG data, with category information encoded in trigger values (1-6 for stimulus categories, 7-8 for positive/negative story endings). Visual stimulus onset delays of approximately 20 ms relative to triggers were estimated using photodiode measurements. Baseline periods were defined as 2 seconds prior to picture onset during the localizer phase.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "memory replay"
-    },
-    {
-      "term": "sequential memory"
-    },
-    {
-      "term": "neural oscillations"
-    },
-    {
-      "term": "event-related fields"
-    }
-  ],
-  "source_hash": "8e3182bdef94d7c4d55044c4950d459b3b24607bbdd2c57eee4cda8055f8748b"
+  "source_hash": "39b0e1d9c265c9e3e469974d953161a069bee907a7837f0876b61e57188c40a9"
 }
