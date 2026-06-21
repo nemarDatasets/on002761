@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "memoryreplay",
-  "description": "This MEG dataset contains neural recordings from human subjects during memory and localizer phases of an experiment investigating memory replay and sequential neural activity patterns. Participants viewed images from multiple categories and story-ending stimuli while MEG signals were recorded with precise event timing marked by triggers. The dataset includes detailed trigger information for event-related analysis and supports investigations of how the brain replays learned sequences during memory tasks.",
-  "methods_description": "MEG recordings were acquired during two experimental phases: a memory phase and a localizer phase. In both phases, trials began with visual presentation of images from 6 stimulus categories or story-ending stimuli (positive or negative valence), with category information encoded in trigger values (1-8). Memory phase trials included answer onsets marked approximately 5.5 seconds after stimulus onset. Localizer phase trials included a 2-second baseline period with word naming preceding picture onset. Visual stimulus timing was calibrated using a photodiode, with approximately 20 ms delay between trigger and visual onset.",
+  "description": "This MEG dataset contains neural recordings from human subjects during memory and localizer phases of an experiment investigating memory replay and sequential neural activity patterns. Participants viewed images from multiple stimulus categories and story-ending stimuli while MEG signals were recorded. The dataset includes detailed trigger information for event marking and timing, enabling analysis of neural sequenceness and memory-related brain activity.",
+  "methods_description": "MEG recordings were acquired during two experimental phases: a memory phase and a localizer phase. In both phases, trials began with visual presentation of images from 6 stimulus categories or story-ending stimuli (positive or negative). Memory phase trials included an answer onset approximately 5.5 seconds after stimulus presentation. Localizer phase trials included a 2-second baseline period with word naming prior to picture onset. Visual stimulus timing was calibrated using a photodiode, with approximately 20 ms delay between trigger and visual onset.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,13 +26,13 @@
       "term": "sequential activity"
     },
     {
-      "term": "hippocampus"
+      "term": "neural sequenceness"
     },
     {
-      "term": "event-related analysis"
+      "term": "episodic memory"
     },
     {
-      "term": "neural oscillations"
+      "term": "brain imaging"
     }
   ],
   "related_identifiers": [
@@ -74,12 +74,10 @@
     },
     {
       "funder_name": "Wellcome Trust",
-      "award_number": "203147/Z/16/Z",
-      "award_title": "Core funding for Wellcome Centre for Human Neuroimaging"
+      "award_number": "203147/Z/16/Z"
     },
     {
-      "funder_name": "UCL",
-      "award_title": "Graduate Research Scholarship and Overseas Research Scholarship"
+      "funder_name": "University College London"
     },
     {
       "funder_name": "Max Planck Society"
