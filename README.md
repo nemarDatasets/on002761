@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on002761-blue)](https://doi.org/10.82901/nemar.on002761)
+
 The MEG files contain a channel with triggers necessary for event marking and timing. Separate event files with onsets are provided in the participant directories for completeness only; the MEG triggers should be used for actual onsets in analysis. The delay between the trigger and the visual onset of an on-screen event sent by the projector is approximately 20 ms, as estimated using a photodiode.
 
 Memory phase triggers: At the onset of a trial, the first trigger represents the category (1-8) of the on-screen image. Categories 1-6 represent actual stimulus categories. Trigger values of 7 and 8 represent the 4 positive and 4 negative story-ending stimuli, respectively. The onset of the answer, approximately 5.5 sec later, is marked by a trigger value of 11.
