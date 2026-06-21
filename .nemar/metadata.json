@@ -1,32 +1,39 @@
 {
   "version": "2.0",
-  "dataset_id": "on002761",
-  "source": "openneuro",
-  "source_id": "ds002761",
+  "pipeline_stage": "validated",
   "title": "memoryreplay",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "G. Elliott Wimmer": {},
+    "G. Elliott Wimmer": {
+      "orcid": "0000-0002-2227-119X"
+    },
     "Yunzhe Liu": {},
     "Neža Vehar": {},
     "Timothy E.J. Behrens": {},
     "Raymond J. Dolan": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds002761.v1.1.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1101/758185",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on002761",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002761",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "",
-  "recording_modality": [
-    "meg"
-  ],
-  "datatypes": [
-    "meg"
   ],
   "funding_references": [
     {
@@ -36,11 +43,64 @@
       "funder_name": "Y.L. is supported by a UCL Graduate Research Scholarship and an Overseas Research Scholarship."
     },
     {
-      "funder_name": "The Wellcome Centre for Human Neuroimaging is supported by core funding from the Wellcome Trust (203147/Z/16/Z)."
+      "funder_name": "The Max Planck University College London Centre is a joint initiative supported by University College London and the Max Planck Society."
     },
     {
-      "funder_name": "The Max Planck University College London Centre is a joint initiative supported by University College London and the Max Planck Society."
+      "funder_name": "Wellcome Trust",
+      "award_number": "098362/Z/12/Z",
+      "award_title": "Investigator Award"
+    },
+    {
+      "funder_name": "Wellcome Trust",
+      "award_number": "203147/Z/16/Z"
+    },
+    {
+      "funder_name": "University College London"
+    },
+    {
+      "funder_name": "Max Planck Society"
     }
   ],
-  "acknowledgements": "The authors thank Zeb Kurth-Nelson for helpful discussions."
+  "modalities": [
+    "meg"
+  ],
+  "resource_type_specific": "MEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".acq",
+    ".cfg",
+    ".cls",
+    ".gitattributes",
+    ".hc",
+    ".hist",
+    ".infods",
+    ".json",
+    ".md",
+    ".meg4",
+    ".newds",
+    ".res4",
+    ".tsv"
+  ],
+  "description": "This MEG dataset contains neural recordings from a memory replay study investigating how the brain replays sequential memories during rest and task periods. Participants performed a memory encoding phase followed by a localizer phase while MEG activity was recorded. The dataset includes detailed trigger information for event marking, stimulus category labels, and story-ending classifications, enabling analysis of memory sequence representations in neural activity.",
+  "methods_description": "MEG recordings were acquired during two experimental phases: a memory phase where participants viewed images from 6 stimulus categories plus story-ending stimuli, and a localizer phase with similar stimulus presentations. Event onsets were marked by trigger pulses in the MEG data, with category information encoded in trigger values (1-6 for stimulus categories, 7-8 for positive/negative story endings). Visual stimulus onset delays of approximately 20 ms relative to triggers were estimated using photodiode measurements. Baseline periods were defined as 2 seconds prior to picture onset during the localizer phase.",
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "memory replay"
+    },
+    {
+      "term": "sequential memory"
+    },
+    {
+      "term": "neural oscillations"
+    },
+    {
+      "term": "event-related fields"
+    }
+  ],
+  "source_hash": "8e3182bdef94d7c4d55044c4950d459b3b24607bbdd2c57eee4cda8055f8748b"
 }
