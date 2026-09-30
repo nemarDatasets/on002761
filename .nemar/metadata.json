@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "memoryreplay",
-  "description": "This MEG dataset contains neural recordings from human subjects during memory and localizer phases of an experiment investigating memory replay and sequential neural activity patterns. Participants viewed images from multiple stimulus categories and story-ending stimuli while MEG signals were recorded. The dataset includes detailed trigger information for event marking and timing, enabling analysis of neural sequenceness and memory-related brain activity.",
-  "methods_description": "MEG recordings were acquired during two experimental phases: a memory phase and a localizer phase. In both phases, trials began with visual presentation of images from 6 stimulus categories or story-ending stimuli (positive or negative). Memory phase trials included an answer onset approximately 5.5 seconds after stimulus presentation. Localizer phase trials included a 2-second baseline period with word naming prior to picture onset. Visual stimulus timing was calibrated using a photodiode, with approximately 20 ms delay between trigger and visual onset.",
+  "description": "Magnetoencephalography (MEG) dataset from a study of episodic memory retrieval, in which participants recalled episodes while neural activity was recorded. The data support analyses of rapid neural replay of episode content during successful retrieval. The dataset includes a memory phase and a localizer phase, with trigger channels marking stimulus categories and answer onsets.",
+  "methods_description": "MEG was recorded with a trigger channel marking event timing. Visual onset lagged the trigger by about 20 ms, as estimated with a photodiode. In the memory phase, each trial began with a trigger for the image category (1-8), and the answer onset was marked by trigger 11 about 5.5 s later. The localizer phase used the same category triggers, with a word naming each picture shown for 2 s before picture onset. Sequenceness was computed as the Frobenius inner product between the lag-wise regression matrix and a 6 x 6 transition matrix, z-scored across lags, and differential forward-backward sequenceness was then derived.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,26 +20,28 @@
       "term": "MEG"
     },
     {
-      "term": "memory replay"
-    },
-    {
-      "term": "sequential activity"
-    },
-    {
-      "term": "neural sequenceness"
-    },
-    {
       "term": "episodic memory"
     },
     {
-      "term": "brain imaging"
+      "term": "memory retrieval"
+    },
+    {
+      "term": "neural replay"
+    },
+    {
+      "term": "sequenceness"
+    },
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1101/758185",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on002761",
@@ -47,14 +49,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002761",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds002761.v1.1.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on002761",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -69,18 +71,12 @@
     },
     {
       "funder_name": "Wellcome Trust",
-      "award_number": "098362/Z/12/Z",
-      "award_title": "Investigator Award"
+      "award_number": "098362/Z/12/Z"
     },
     {
       "funder_name": "Wellcome Trust",
-      "award_number": "203147/Z/16/Z"
-    },
-    {
-      "funder_name": "University College London"
-    },
-    {
-      "funder_name": "Max Planck Society"
+      "award_number": "203147/Z/16/Z",
+      "award_title": "Core funding for the Wellcome Centre for Human Neuroimaging"
     }
   ],
   "resource_type_specific": "MEG Dataset",
@@ -88,7 +84,7 @@
     "meg"
   ],
   "sizes": [
-    "219.1 GB (1805 files)"
+    "204 GB (1805 files)"
   ],
   "formats": [
     ".acq",
